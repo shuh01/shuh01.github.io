@@ -102,6 +102,7 @@ By doing this, django will automatically render a HTML to a website.
 ### Create a base.html and set it as a basic structure of other htmls.
 
 ```html
+{% raw %}
 #base.html
 
 <!DOCTYPE html>
@@ -124,6 +125,7 @@ By doing this, django will automatically render a HTML to a website.
 	{{ result.user }}
 	<p>This is a template</p>
 {% endblock %}
+{% endraw %}
 ```
 
 ## Include template tag
@@ -162,11 +164,13 @@ return render(request, "about.html", my_context)
 ### /templates/about.html
 
 ```html
+{% raw %}
 <ul>
   {% for my_sub_item in my_list %}
   <li>{{forloop.counter}} - {{my_sub_item}}</li>
   {% endfor %}
 </ul>
+{% endraw %}
 ```
 
 ## Using conditions in a template
