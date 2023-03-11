@@ -45,7 +45,7 @@ def product_create_view(request):
 
 ### Create product_create.html
 
-```python
+```html
 {% extends 'base.html' %}
 
 {% block content %}
