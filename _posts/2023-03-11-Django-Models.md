@@ -55,14 +55,14 @@ INSTALLED_APPS = [
 
 - Anytime when we make changes to models.py
 
-```python
+```powershell
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
 ### Create new products using python shell
 
-```python
+```powershell
 $ python mangage.py shell
 >>> from products.models import Product
 >>> Product.objects.all() #This command shows the list of products in db

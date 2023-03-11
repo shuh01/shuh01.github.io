@@ -57,7 +57,7 @@ http://127.0.0.8000/contact/ → This will show us the contact_view page
 
 # Django Templates
 
-```python
+```powershell
 $ mkdir templates
 $ cd templates
 
@@ -145,6 +145,7 @@ return render(request, "about.html", my_context)
 ### /templates/about.html
 
 ```html
+{% raw %}
 {% extends 'base.html' %} 
 {% block content %}
 	<h1>About page</h1>
@@ -153,6 +154,7 @@ return render(request, "about.html", my_context)
 		{{ my_text }}, {{ my_number }}, {{ my_list }}
 	</p>
 {% endblock %}
+{% endraw %}
 ```
 
 ## For loop in a template
@@ -172,6 +174,7 @@ return render(request, "about.html", my_context)
 ### /pages/views.py
 
 ```html
+{% raw %}
 <ul>
   {% for abc in my_list %} 
     {% if abc == 312 %}
@@ -183,6 +186,7 @@ return render(request, "about.html", my_context)
     {% endif %}
   {% endfor %}
 </ul>
+{% endraw %}
 ```
 
 ## Template tags and filters
@@ -207,6 +211,7 @@ def product_detail_view(request):
 ### /templates/product/detail.html
 
 ```html
+{% raw %}
 {% extends 'base.html' %}
 
 {% block content %}
@@ -216,6 +221,7 @@ def product_detail_view(request):
 {{object.price}}
 
 {% endblock %}
+{% endraw %}
 ```
 
 ### /trydjango/urls.py
