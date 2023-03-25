@@ -4,6 +4,8 @@ main:
     url: /categories/
   - title: "By Years"
     url: /year-archive-grid/
+  - title: "Category"
+    url: /categories/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
