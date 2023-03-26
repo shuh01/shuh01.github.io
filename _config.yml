@@ -285,3 +285,11 @@ defaults:
       toc_sticky: true
       toc_icon: "fas-fa-utensils"
       author_profile: false
+
+# Analytics
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-VP9944R9WG"
+    anonymize_ip         : # true, false (default)
